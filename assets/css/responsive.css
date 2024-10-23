@@ -51,4 +51,9 @@
     .cards{
         margin-top: 80px;
     }
+    .separation-line{
+        width: 319px;
+        height: 1px;
+        margin: 20px 0;
+    }
   }
