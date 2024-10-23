@@ -245,3 +245,7 @@
 .product-details:hover .simple-button {
   background-color: #111439;
 }
+
+.product-row{
+  margin-top: 50px;
+}
