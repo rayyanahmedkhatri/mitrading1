@@ -11,7 +11,7 @@
   
   .product-txt {
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   
   /* 
@@ -171,7 +171,7 @@
     display: flex;
     justify-content: center;
     height: 468px;
-    width: 100px;
+    width: 249px;
   }
   
   /* Text Styles */
@@ -208,7 +208,30 @@
   }
   
   .product-row{
-    margin-top: 50px;
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
+    gap: 66px;
+  }
+
+
+  @media (max-width: 768px) {
+    .cards{
+      width: 400px;
+      height: 500px;
+    }
+    .product-card{
+      height: 500px;
+    }
+    .product-details{
+      height: 250px;
+      justify-content: space-around;
+    }
+    .product-image{
+      height: 250px;
+    }
+    .weight{
+      
+    margin: 0;
+    }
   }

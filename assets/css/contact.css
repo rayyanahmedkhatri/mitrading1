@@ -1,6 +1,5 @@
-svg {
-	height: 23rem;
-	margin-right: 4rem;
+.main-logo {
+	margin-right: 5rem;
 }
 
 #envelope {
@@ -42,6 +41,7 @@ svg {
 
 .container {
 	height: 80vh;
+    width: 70%;
 }
 
 form {

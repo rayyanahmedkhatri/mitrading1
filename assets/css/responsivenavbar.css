@@ -49,14 +49,12 @@
     footer{
         height: 900px;
     }
-    .cards{
-        margin-top: 80px;
-    }
     .separation-line{
         width: 319px;
         height: 1px;
         margin: 20px 0;
     }
-    .contact-container{
+    .contact-us{
+        flex-direction: column;
     }
   }
