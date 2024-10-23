@@ -368,8 +368,8 @@ footer{
   height: 299px;
   /* margin: 0 auto; */
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.332);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.604);
   justify-content: space-around;
 }
 
