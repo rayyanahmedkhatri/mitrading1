@@ -45,42 +45,40 @@
         <div class="row">
             <h1 style="font-size: xxx-large;">Contact Us</h1>
         </div>
-        <form action="se"></form>
-        <div class="row input-container">
-            <div class="col-xs-12">
-              <div class="styled-input wide">
-                <input type="text" required placeholder="Name"/>
-                <!-- <label>Name</label>  -->
-              </div>
+        <form id="contact-form" action="sendemail.php" method="POST" onsubmit="return validateForm();">
+            <div class="row input-container">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="text" name="name" required placeholder="Name"/>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input">
+                        <input type="email" name="email" required placeholder="E-Mail"/>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input" style="float:right;">
+                        <input type="number" name="phone" required placeholder="Phone Number"/>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea name="message" required placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <button class="g-recaptcha submit-btn" 
+                            data-sitekey="6LdArFEqAAAAAO7_bZvHntfU6XC_bPiEsJaQKHlf" 
+                            data-callback="onSubmit" 
+                            data-action="submit" 
+                            type="submit">Submit</button>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="styled-input">
-                <input type="text" required placeholder="E-Mail"  />
-                <!-- <label>Email</label>  -->
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="styled-input" style="float:right;">
-                <input type="text" required placeholder="Phone Number"/>
-                <!-- <label>Phone Number</label>  -->
-              </div>
-            </div>
-            <div class="col-xs-12">
-              <div class="styled-input wide">
-                <textarea required placeholder="Message"></textarea>
-                <!-- <label>Message</label> -->
-              </div>
-            </div>
-            <div class="col-xs-12">
-              <button class="g-recaptcha submit-btn" 
-        data-sitekey="6LdArFEqAAAAAO7_bZvHntfU6XC_bPiEsJaQKHlf" 
-        data-callback='onSubmit' 
-        data-action='submit'
-        type="submit">Submit</button>
-            </div>
-        </div>
-      </form>
-      </div>
+        </form>
+    </div>
+    
+    
       
       
 
@@ -149,7 +147,13 @@
   function onSubmit(token) {
     document.getElementById("contact-form").submit();
   }
+
+  function validateForm() {
+    // You can add your validation logic here if needed
+    return true; // Ensure it returns true to submit the form
+  }
 </script>
+
 </body>
 </html>
 
