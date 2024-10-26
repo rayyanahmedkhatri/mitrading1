@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recaptchaResponse = $_POST['g-recaptcha-response'];
 
     // Your secret key
-    $secretKey = '6LdArFEqAAAAAB7gvFIg9Ir_whthCX-Svg3L1kuy'; // Replace with your actual secret key
+    $secretKey = ''; // Replace with your actual secret key
 
     // Verify the reCAPTCHA response
     $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$recaptchaResponse}");
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
         $mail->SMTPAuth = true; // Enable SMTP authentication
         $mail->Username = 'graphi.trends1@gmail.com'; // Your Gmail address
-        $mail->Password = 'gagdjyzwjgsegsde'; // Your Gmail app password 
+        $mail->Password = ''; // Your Gmail app password 
         $mail->SMTPSecure = 'tls'; // Enable TLS encryption
         $mail->Port = 587; // TCP port to connect to
 
