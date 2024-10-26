@@ -170,7 +170,7 @@
   .cards {
     display: flex;
     justify-content: center;
-    height: 468px;
+    height: fit-content;
     width: 249px;
   }
   
@@ -211,7 +211,7 @@
     margin-top: 0;
     display: flex;
     justify-content: space-between;
-    gap: 66px;
+    gap: 79px;
   }
 
 
