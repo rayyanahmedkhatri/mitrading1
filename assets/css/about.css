@@ -40,9 +40,9 @@ margin-bottom: 10px;
     letter-spacing: 10px;
 }
 .paragraph{
-    text-align: justify;
-    width: 90%;
-    font-size: x-large;
+    text-align: center;
+    width: 80%;
+    font-size: 22px;
     font-weight: 600;
     color: rgb(196, 196, 196);
     letter-spacing: 2px;
