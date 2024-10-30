@@ -34,7 +34,7 @@ main {
 .heading{
     font-size: 50px;
     font-weight: 700;
-    margin-top: 51px;
+    margin-top: 81px;
 margin-bottom: 10px;
     color: rgb(252, 252, 252);
     letter-spacing: 10px;
@@ -47,6 +47,7 @@ margin-bottom: 10px;
     font-weight: 600;
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
+    margin-bottom: 70px;
 }
 
 .text{
