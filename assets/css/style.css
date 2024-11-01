@@ -1,29 +1,45 @@
 /* Welcome */
 
-/* Styles for the .welcome class */
-.welcome {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.742), rgba(0, 0, 0, 0.679), rgba(0, 0, 0, 0.844), rgb(0, 0, 0)),
-    url('../../assets/images/main/istockphoto-915169344-2048x2048.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 800px;
+.welcome-wrapper {
+  position: relative;
   width: 100%;
-  /* Make it responsive */
+  height: 800px;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: blur(10px); /* Adjust blur level as needed */
+  z-index: -1; /* Places the image behind the content */
+}
+
+.welcome {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.742),
+    rgba(0, 0, 0, 0.679),
+    rgba(0, 0, 0, 0.844),
+    rgb(0, 0, 0)
+  );
 }
 
-/* Styles for the h1 element */
 .welcome h1 {
   color: rgb(255, 255, 255);
   font-size: 59px;
-  /* Adjust size as needed */
   margin: 0;
   font-weight: 700;
-
 }
 
 .welcome p {
