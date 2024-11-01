@@ -95,17 +95,13 @@
 
     </footer>
 <script>
-    $(document).ready(function() {
- 
-        $('.color-choose input').on('click', function() {
-            var headphonesColor = $(this).attr('data-image');
-       
-            $('.active').removeClass('active');
-            $('.left-column img[data-image = ' + headphonesColor + ']').addClass('active');
-            $(this).addClass('active');
-        });
-       
-      });
-      </script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+      
 </body>
 </html>
