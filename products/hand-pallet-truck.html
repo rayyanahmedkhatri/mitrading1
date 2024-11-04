@@ -15,11 +15,6 @@
 </head>
 <body>
     <div id="header" style="width: 100%;"></div>
-    <script>
-      fetch("header.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("header").innerHTML = data);
-    </script>
 
   <main class="container">
     <div class="row">
@@ -33,11 +28,7 @@
   </div>
   </main>
   <div id="footer" style="width: 100%;"></div>
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => document.getElementById("footer").innerHTML = data);
-</script>
+
 <script>
     // Load the header and footer content
     fetch("header.html")
