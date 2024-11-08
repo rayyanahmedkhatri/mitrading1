@@ -145,3 +145,59 @@ input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
 }
+
+
+.stylish-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(119, 119, 119, 0.2);
+  /* Lighter overlay for contrast */
+  transition: all 0.4s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.stylish-button:hover {
+  background-color: #FAAB18;
+  /* Contrasting hover color */
+  color: #ffffff;
+  /* Main color on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.621);
+}
+
+.stylish-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.stylish-button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.381);
+}
+
+.stylish-button {
+  display: inline-block;
+  background: #111439;
+  /* Your main color */
+  border: none;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.373);
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  /* Removes underline */
+  width: 100%;
+}

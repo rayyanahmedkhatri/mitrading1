@@ -34,14 +34,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Set the recipient email address
-    $to = "ra.other2@gmail.com"; // Replace this with your email to receive messages
+    $to = "info@mitrading.com.pk"; // Replace this with your email to receive messages
 
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+        $mail->Host = 'mail.mitrading.com.pk'; // Set the SMTP server to send through
         $mail->SMTPAuth = true; // Enable SMTP authentication
-        $mail->Username = 'graphi.trends1@gmail.com'; // Your Gmail address
+        $mail->Username = 'sendmail@mitrading.com.pk'; // Your Gmail address
         $mail->Password = ''; // Your Gmail app password 
         $mail->SMTPSecure = 'tls'; // Enable TLS encryption
         $mail->Port = 587; // TCP port to connect to
@@ -69,12 +69,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<script>alert('Invalid request.'); window.location.href = 'index.html';</script>";
 }
 ?>
-
-
-
-
-
-
-
-
-gagdjyzwjgsegsde

@@ -73,5 +73,12 @@
   .right-column h1{
     font-size: 38px;
   }
+  .dimention-drawing .heading{
+    font-size: 35px !important;
+  }
+  .dimention-drawing img{
+    width: 100%;
+    margin-right: 50px;
+  }
 }
   
