@@ -18,18 +18,18 @@
 
   <main class="container">
     <div class="row">
-    <div class="col-md-6 left-column col-sm-12"><img src="<?php echo $productImage; ?>" alt="" width="500px"></div>
+    <div class="col-md-6 left-column col-sm-12"><img src="<?php echo $productImage; ?>" alt="<?php echo $productImage; ?>" width="500px"></div>
     <div class="col-md-6 right-column col-sm-12">
-      <h1 class="heading"><?php echo $productName; ?></h1>
-      <p class="paragraph"><?php echo $productDescription; ?></p>
+      <h1 class="heading" style="margin-bottom: 0;"><?php echo $productName; ?></h1>
+      <p class="paragraph" style="margin-bottom: 0;"><?php echo $productDescription; ?></p>
       <div class="line"></div>
       <a href="../contact.html" class="simple-button">Contact Us</a>
     </div>
   </div>
   <br><br><br><br><br><br><br><br><br><br>
   <div class="dimention-drawing">
-    <h1 class="heading" style="font-size: 40px; ">Dimention Drawing</h1>
-    <img src="<?php echo $productDrawing; ?>" alt="" width="100%">
+    <h1 class="heading" style="font-size: 40px; ">Dimension Drawing</h1>
+    <img src="<?php echo $productDrawing; ?>" alt="<?php echo $productDrawing; ?>" width="100%">
   </div>
   </main>
   
