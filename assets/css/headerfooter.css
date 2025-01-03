@@ -100,7 +100,7 @@ li {
 
 footer {
     width: 100%;
-    height: 530px;
+    height: 380px;
     background-color: #070819;
     display: flex;
     flex-direction: column;
@@ -111,13 +111,14 @@ footer {
     display: flex;
     flex-direction: row;
     width: 80%;
-    padding-top: 90px;
+    padding-top: 22px;
 }
 
 .footer-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 30px;
 }
 
 .qr-code {
@@ -126,15 +127,15 @@ footer {
 }
 
 .separation-line {
-    height: 319px;
+    height: 280px;
     border: 1px solid white;
+    margin-top: 24px;
     width: 1px;
 }
 
 .contact-container {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     max-width: 424px;
     height: 322px;
     /* margin: 0 auto; */
@@ -156,6 +157,6 @@ footer {
 }
 
 .contact-text {
-    font-size: 24px;
+    font-size: 21px;
     color: #ffffff;
 }

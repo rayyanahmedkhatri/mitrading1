@@ -43,10 +43,10 @@ margin-bottom: 10px;
 .paragraph{
     text-align: left;
     /* width: 80%; */
-    font-size: 21px;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(212, 212, 212);
+    letter-spacing: 1px;
     margin-bottom: 70px;
 }
 
